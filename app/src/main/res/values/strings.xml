@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Trello</string>
+    <string name="get_started">Let\'s get started</string>
+    <string name="description">Collaborate and plan together across multiple devices on Trello\'s minimalist interface</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_up_description">Enter your name, email and password, to register with us.</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="retype_password">Retype password</string>
+    <string name="ok">OK</string>
+    <string name="sign_in_description">Welcome back, let\'s sign in!</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="number">Phone number</string>
+    <string name="update">Update</string>
+    <string name="update_description">Update your information here.</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawerButtonProfile"
+            android:icon="@drawable/ic_drawer_profile_button"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/drawerSignOutButton"
+            android:icon="@drawable/ic_drawer_logout_button"
+            android:title="@string/logout" />
+    </group>
+</menu>

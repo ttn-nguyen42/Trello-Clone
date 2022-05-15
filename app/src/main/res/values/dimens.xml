@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splashText">64sp</dimen>
+    <dimen name="bodyText">14sp</dimen>
+    <dimen name="displayText">42sp</dimen>
+    <dimen name="headerText">34sp</dimen>
+    <dimen name="title1Text">28sp</dimen>
+    <dimen name="title2Text">22sp</dimen>
+    <dimen name="headlineText">20sp</dimen>
+    <dimen name="captionText">12sp</dimen>
+    <dimen name="contentPadding">16dp</dimen>
+    <dimen name="halfOfContentPadding">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

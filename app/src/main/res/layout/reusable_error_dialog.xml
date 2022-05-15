@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/contentPadding"
+    android:layout_marginEnd="@dimen/contentPadding"
+    android:layout_marginBottom="@dimen/contentPadding"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/error_dialog_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/contentPadding"
+        android:paddingEnd="@dimen/contentPadding"
+        android:paddingBottom="@dimen/contentPadding"
+        android:paddingTop="24dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_error" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/contentPadding"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title1Text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/contentPadding"
+            android:paddingRight="@dimen/contentPadding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bodyText"
+            android:textStyle="normal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAccept"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/contentPadding"
+            android:background="@drawable/ic_primary_button"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/headlineText" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

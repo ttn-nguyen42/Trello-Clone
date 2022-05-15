@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.sign_up.SignUpActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/reusable_toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:paddingStart="@dimen/contentPadding"
+        android:paddingEnd="@dimen/contentPadding"
+        android:text="@string/sign_up_description"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/bodyText"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etNameLayout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/contentPadding"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/contentPadding"
+        android:baselineAligned="false"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etEmailLayout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/contentPadding"
+        android:layout_marginEnd="@dimen/contentPadding"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/etNameLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPasswordLayout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/contentPadding"
+        android:layout_marginEnd="@dimen/contentPadding"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/etEmailLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etRetypePasswordLayout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/contentPadding"
+        android:layout_marginEnd="@dimen/contentPadding"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/etPasswordLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRetypePassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/retype_password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSignUp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/contentPadding"
+        android:layout_marginEnd="@dimen/contentPadding"
+        android:layout_marginBottom="@dimen/contentPadding"
+        android:background="@drawable/ic_primary_button"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/headlineText"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <include
+        android:id="@+id/loadingView"
+        layout="@layout/reusable_loading_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
